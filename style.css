@@ -6,8 +6,8 @@ body {
 
 
 #myCanvas {
-  background-image: url("https://images.pexels.com/photos/1387577/pexels-photo-1387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: 400px;
+  background-image: url("https://media.istockphoto.com/id/593318672/photo/railroad-side-view.jpg?s=612x612&w=0&k=20&c=uPnG3cnisq4wPJyQTLs30EefeatCPPyM37vIF7-A-io=");
+  background-size: 550px;
   border-radius: 30px;
   border: 1px solid rgb(255,245,227);
 }
@@ -17,4 +17,71 @@ body {
   text-align: left;
   justify-content: space-around;
 }
+.main{background-color:pink}
+*{
+  margin: 0;
+  padding: 0;
+  font-family:papyrus;
+}
 
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  min-height: 100vh;
+}
+.wavy
+{
+  position: relative;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+.wavy span
+{
+  position: relative;
+  display: inline-block;
+  color: #ffbfec;
+  font-size: 2em;
+  text-transform: uppercase;
+  animation: animate 2s ease-in-out infinite;
+animation-delay: calc(0.1s * var(--i))
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: translateY(0px);
+  }
+  20%
+  {
+    transform: translateY(-30px);
+  }
+  40%, 100%
+  {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 320px)
+{
+  .wavy span{
+    font-size: 110%;
+  }
+}
+@media (max-width: 224px)
+{
+  .wavy span {
+    font-size: 80%;
+  }
+}
+@media (max-width: 205px)
+{
+  .wavy span {
+    font-size: 70%;
+  }
+}
+@media (max-width: 185px)
+{
+  .wavy span {
+    font-size: 50%;
+  }
+}
